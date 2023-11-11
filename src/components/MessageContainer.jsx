@@ -79,7 +79,7 @@ const MessageContainer = ({ messages }) => {
         {messages.map((m, index) => 
             <Message key={index}>
                 <LeftSide>
-                    <img src={m.author.picture} />
+                    <img style={{width: '50px'}} src={m.author.picture} />
                     <Time>{convertTimeStamp(m.timestamp)}</Time>
                 </LeftSide>                
                 <RightSide>

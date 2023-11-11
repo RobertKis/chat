@@ -34,8 +34,6 @@ const Home = () => {
     }, [])
 
     const sendMessage = ( message ) => {
-        console.log('message set')
-        console.log(message)
         setMessages(messages => [...messages, message])
     } 
 
